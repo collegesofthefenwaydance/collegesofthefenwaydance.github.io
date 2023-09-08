@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>COF Dance Venue Guide</title>
+</head>
+<body>
+    <p class="heading1">COF Dance Venue Guide, Fall 2023</p>
+
+    <p class="prompt">Select a venue below to learn more about it:</p>
+
+    <form>
+    <label for="location">Dance Studio:</label>
+    <select class="select" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="" selected disabled hidden>Select a Location</option>
+        <optgroup label="Simmons Holmes Sports Center">
+            <option value="./studio1.html">First Floor Dance Studio</option>
+            <option value="./fit1.html">Fit Studio 1</option>
+            <option value="./fit2.html">Fit Studio 2</option>
+        </optgroup>
+        <optgroup label="Emmanuel College">
+            <option value="./saintjuliehall.html">Saint Julie Hall Studio</option>
+        </optgroup>
+        <optgroup label="Winsor School">
+            <option value="./winsor.html">Winsor School Dance Studio</option>
+        </optgroup>
+    </select>
+  <br><br>
+</form>
+</body>
+</html>
