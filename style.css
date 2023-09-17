@@ -90,3 +90,9 @@ body {
     color:#0adfb8;
     cursor: pointer;
   }
+
+  @media (max-width: 600px) {
+   body {
+      width: 100%;
+   }
+  }
